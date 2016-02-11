@@ -1,5 +1,8 @@
-Django on OpenShift
+
+Django no OpenShift
 ===================
+
+> Neste respositório é apresentado um exemplo de como um projeto Django deve ser estruturado para funcionar na infraestrutura do OpenShift. A documentação foi retirada da git do OpenShift que pode ser acessada no [link](http://github.com/openshift/django-example).
 
 This git repository helps you get up and running quickly w/ a Django
 installation on OpenShift.  The Django project name used in this repo
@@ -75,3 +78,4 @@ Use `rhc ssh` to log into python gear and run this command:
 You should be now able to login at:
 
 	http://django-$yournamespace.rhcloud.com/admin/
+	

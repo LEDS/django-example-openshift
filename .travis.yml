@@ -4,8 +4,8 @@ python:
 addons:
   postgresql: "9.4"
 services:
-  - postgresql  
-  
+  - postgresql
+
 before_install:
   - wget http://repo1.maven.org/maven2/org/codehaus/sonar/runner/sonar-runner-dist/2.4/sonar-runner-dist-2.4.zip
   - unzip sonar-runner-dist-2.4.zip
@@ -16,8 +16,9 @@ branches:
     - desenvolvimento
 install:
   - pip install -r requirements.txt
-script: 
+script:
+  - python wsgi/myproject/manage.py test
   - nosetests
-
+  
 after_script:
  - ./sonar-runner-2.4/bin/sonar-runner

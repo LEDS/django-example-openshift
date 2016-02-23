@@ -8,8 +8,7 @@ from .models import Choice, Question
 
 
 def home(request):
-     return HttpResponse('Exemplo de uso de Django com OpenShift: <br> <strong>/polls</strong>: aplicação de questões <br> <strong>/admin</strong>: usuario <i> admin </i> senha: <i>teste123</i>' )
-
+     return render(request, 'polls/home.html')
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'

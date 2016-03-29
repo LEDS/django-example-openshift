@@ -21,9 +21,9 @@ after_script:
  
  deploy:
   provider: openshift
-  user: leds.ifes@gmail.com
-  password: leds2013ifesbr 
-  domain: leds
+  user: xxxxx
+  password: xxxxxx
+  domain: xxxx
   app: djangoexample
   on: master
   
